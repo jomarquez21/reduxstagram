@@ -4,7 +4,6 @@ import * as actionCreators from '../actions/actionCreators';
 
 import Main from './Main';
 
-
 function mapStateToProps(state) {
   return {
     posts: state.posts,

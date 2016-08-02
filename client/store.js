@@ -1,5 +1,5 @@
 import { createStore, compse } from 'redux';
-import { syncHistoryWithStore } from 'react-router-redux';
+import { syncHistoryWithStore} from 'react-router-redux';
 import { browserHistory } from 'react-router';
 
 // import the root reducer
@@ -16,7 +16,6 @@ const defaultState = {
 
 const store = createStore(rootReducer, defaultState);
 
-// aca hacemos que el historial de redux sea el mismo del navegador
-export const history = syncHistoryWithStore(browserHistory);
+export const history = syncHistoryWithStore(browserHistory, store);
 
 export default store;
